@@ -1,0 +1,121 @@
+<html>
+
+<head>
+  <title>My First HTML Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    h1 {
+      color: blue;
+    }
+
+    p {
+      color: red;
+      border: 1px;
+      border-color: blanchedalmond;
+    }
+
+    .Highlight {
+      color: white;
+    }
+
+    #specialtext {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="Highlight">Welcome to My Page!</h1>
+  <p>This is a paragraph. HTML is fun!</p>
+  <h2 id="specialtext">This Is Heading 2</h2>
+
+  <ul>
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+  </ul>
+
+  <ol>
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+  </ol>
+
+  <a href="https://100xengineers.com/">100X ENGINEERS</a>
+
+  <script>
+    console.log("hello World")
+    var n1 = 50
+    var n2 = 30
+    var sum = n1 + n2
+
+    console.log("Sum of n1(20)+n2(30): " + sum)
+    console.log("Sum of 10+10: " + (10 + 10))
+    console.log("product of 10*10: " + 10 * 10)
+    console.log("Sub of 10-10: " + (10 - 10))
+    console.log("Sum of 10/10: " + 10 / 10)
+
+    // Prompt the user for input
+    var a = parseFloat(prompt("Enter the first number (a):"));
+    var b = parseFloat(prompt("Enter the second number (b):"));
+    var city2 = prompt("Enter the second city:");
+
+    // Check if the input values are valid numbers
+    if (isNaN(a) || isNaN(b)) {
+      console.log("Please enter valid numbers for both a and b.");
+    } else {
+      // Calculate the sum
+      var sum = a + b;
+
+      // Print the result
+      console.log("The sum of " + a + " and " + b + " is: " + sum);
+    }
+
+    let city = "NEW YORK CITY"
+    console.log(city)
+    console.log(city2)
+
+
+    function sayHello(name) {
+      console.log("Hello " + name)
+    }
+
+    var naam = prompt("Enter Your Name")
+    sayHello(naam)
+
+
+    function sub(a, b) {
+      var sub = a - b
+      return (sub)
+    }
+    var res = sub(12, 6)
+    console.log("Sub of a,b : " + res)
+
+    const DOB = 2000;
+    console.log(DOB)
+
+
+    let food = ["foo1", "bar2", "foo3"]
+    for (var i = 0; i <= 2; i++) {
+      console.log(food[i])
+    }
+
+    let book = {
+      title: "GOAT", author: "PD", publication: "Penguin", year: 2000
+    };
+
+    console.log("The Title: " + book.title)
+    console.log("The Author: " + book.author)
+    console.log("The Pub: " + book.publication)
+    console.log("The Year of pub: " + book.year)
+
+  </script>
+
+</body>
+
+</html>
